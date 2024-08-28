@@ -1,0 +1,25 @@
+6.#include <stdio.h>
+
+int main() {
+    int base, exponent;
+    long long result = 1;  // Result is initialized to 1
+    int i = 0;
+
+    
+    printf("Enter the base (greater than 0): ");
+    scanf("%d", &base);
+
+    printf("Enter the exponent (greater than or equal to 0): ");
+    scanf("%d", &exponent);
+
+    
+    while (i < exponent) {
+        result *= base;  
+        i++;             
+    }
+
+    
+    printf("%d raised to the power of %d is %lld.\n", base, exponent, result);
+
+    return 0;
+}
